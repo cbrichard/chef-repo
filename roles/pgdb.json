@@ -1,0 +1,7 @@
+{
+  "name": "pgdb",
+  "description": "Role for all Postgresql Databases",
+  "run_list": [
+    "recipe[postgres::server]"
+  ]
+}
