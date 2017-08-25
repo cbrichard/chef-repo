@@ -16,8 +16,6 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[system-config::default]
-    verifier:
-      inspec_tests:
-        - test/smoke/default
+        - recipe[td-agent::install]
+    cookbook_path: "../../cookbooks"
     attributes:

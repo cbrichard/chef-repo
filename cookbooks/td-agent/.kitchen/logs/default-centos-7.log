@@ -1,0 +1,100 @@
+I, [2017-07-27T19:19:25.420727 #6947]  INFO -- default-centos-7: -----> Converging <default-centos-7>...
+I, [2017-07-27T19:19:25.421313 #6947]  INFO -- default-centos-7: Preparing files for transfer
+I, [2017-07-27T19:19:25.421412 #6947]  INFO -- default-centos-7: Preparing dna.json
+I, [2017-07-27T19:19:25.421831 #6947]  INFO -- default-centos-7: Berksfile, Cheffile, cookbooks/, or metadata.rb not found so Chef will run with effectively no cookbooks. Is this intended?
+I, [2017-07-27T19:19:25.422239 #6947]  INFO -- default-centos-7: Removing non-cookbook files before transfer
+I, [2017-07-27T19:19:25.423591 #6947]  INFO -- default-centos-7: Preparing validation.pem
+I, [2017-07-27T19:19:25.423956 #6947]  INFO -- default-centos-7: Preparing client.rb
+I, [2017-07-27T19:19:25.502733 #6947]  INFO -- default-centos-7: -----> Chef Omnibus installation detected (install only if missing)
+I, [2017-07-27T19:19:25.525501 #6947]  INFO -- default-centos-7: Transferring files to <default-centos-7>
+I, [2017-07-27T19:19:26.495194 #6947]  INFO -- default-centos-7: Starting Chef Client, version 13.2.20
+I, [2017-07-27T19:19:27.138673 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] WARN: Plugin Network: unable to detect ipaddress
+I, [2017-07-27T19:19:27.138740 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] WARN: Plugin Network: unable to detect ipaddress
+I, [2017-07-27T19:19:27.532305 #6947]  INFO -- default-centos-7: resolving cookbooks for run list: ["td-agent::install"]
+I, [2017-07-27T19:19:27.541559 #6947]  INFO -- default-centos-7: Synchronizing Cookbooks:
+I, [2017-07-27T19:19:27.542360 #6947]  INFO -- default-centos-7:   - td-agent (0.0.0)
+I, [2017-07-27T19:19:27.544002 #6947]  INFO -- default-centos-7: Installing Cookbook Gems:
+I, [2017-07-27T19:19:27.544815 #6947]  INFO -- default-centos-7: Compiling Cookbooks...
+I, [2017-07-27T19:19:27.546118 #6947]  INFO -- default-centos-7: 
+I, [2017-07-27T19:19:27.546241 #6947]  INFO -- default-centos-7: ================================================================================
+I, [2017-07-27T19:19:27.546452 #6947]  INFO -- default-centos-7: Recipe Compile Error
+I, [2017-07-27T19:19:27.546598 #6947]  INFO -- default-centos-7: ================================================================================
+I, [2017-07-27T19:19:27.546620 #6947]  INFO -- default-centos-7: 
+I, [2017-07-27T19:19:27.546635 #6947]  INFO -- default-centos-7: Chef::Exceptions::RecipeNotFound
+I, [2017-07-27T19:19:27.546755 #6947]  INFO -- default-centos-7: --------------------------------
+I, [2017-07-27T19:19:27.546777 #6947]  INFO -- default-centos-7: could not find recipe install for cookbook td-agent
+I, [2017-07-27T19:19:27.546791 #6947]  INFO -- default-centos-7: 
+I, [2017-07-27T19:19:27.546983 #6947]  INFO -- default-centos-7: System Info:
+I, [2017-07-27T19:19:27.547006 #6947]  INFO -- default-centos-7: ------------
+I, [2017-07-27T19:19:27.547163 #6947]  INFO -- default-centos-7: chef_version=13.2.20
+I, [2017-07-27T19:19:27.547318 #6947]  INFO -- default-centos-7: platform=centos
+I, [2017-07-27T19:19:27.547437 #6947]  INFO -- default-centos-7: platform_version=7.3.1611
+I, [2017-07-27T19:19:27.547462 #6947]  INFO -- default-centos-7: ruby=ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+I, [2017-07-27T19:19:27.547481 #6947]  INFO -- default-centos-7: program_name=chef-client worker: ppid=523;start=02:19:26;
+I, [2017-07-27T19:19:27.547499 #6947]  INFO -- default-centos-7: executable=/opt/chef/bin/chef-client
+I, [2017-07-27T19:19:27.547526 #6947]  INFO -- default-centos-7: 
+I, [2017-07-27T19:19:27.547677 #6947]  INFO -- default-centos-7: 
+I, [2017-07-27T19:19:27.547699 #6947]  INFO -- default-centos-7: Running handlers:
+I, [2017-07-27T19:19:27.547945 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] ERROR: Running exception handlers
+I, [2017-07-27T19:19:27.547980 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] ERROR: Running exception handlers
+I, [2017-07-27T19:19:27.548100 #6947]  INFO -- default-centos-7: Running handlers complete
+I, [2017-07-27T19:19:27.548218 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] ERROR: Exception handlers complete
+I, [2017-07-27T19:19:27.549146 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] ERROR: Exception handlers complete
+I, [2017-07-27T19:19:27.549231 #6947]  INFO -- default-centos-7: Chef Client failed. 0 resources updated in 01 seconds
+I, [2017-07-27T19:19:27.549739 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2017-07-27T19:19:27.549778 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2017-07-27T19:19:27.549981 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2017-07-27T19:19:27.550131 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2017-07-27T19:19:27.550247 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] ERROR: could not find recipe install for cookbook td-agent
+I, [2017-07-27T19:19:27.550271 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] ERROR: could not find recipe install for cookbook td-agent
+I, [2017-07-27T19:19:27.571452 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+I, [2017-07-27T19:19:27.571506 #6947]  INFO -- default-centos-7: [2017-07-28T02:19:27+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2017-07-27T19:19:27.581053 #6947] ERROR -- default-centos-7: Converge failed on instance <default-centos-7>.
+E, [2017-07-27T19:19:27.581137 #6947] ERROR -- default-centos-7: ------Exception-------
+E, [2017-07-27T19:19:27.581154 #6947] ERROR -- default-centos-7: Class: Kitchen::ActionFailed
+E, [2017-07-27T19:19:27.581164 #6947] ERROR -- default-centos-7: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2017-07-27T19:19:27.581173 #6947] ERROR -- default-centos-7: ----------------------
+E, [2017-07-27T19:19:27.581181 #6947] ERROR -- default-centos-7: ------Backtrace-------
+E, [2017-07-27T19:19:27.581189 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+E, [2017-07-27T19:19:27.581198 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/provisioner/base.rb:86:in `call'
+E, [2017-07-27T19:19:27.581208 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:384:in `block in converge_action'
+E, [2017-07-27T19:19:27.581217 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-07-27T19:19:27.581226 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-07-27T19:19:27.581234 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-07-27T19:19:27.581243 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-07-27T19:19:27.581251 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:380:in `converge_action'
+E, [2017-07-27T19:19:27.581259 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-07-27T19:19:27.581274 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-07-27T19:19:27.581284 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-07-27T19:19:27.581292 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-07-27T19:19:27.581302 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-07-27T19:19:27.581311 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-07-27T19:19:27.581339 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-07-27T19:19:27.581348 #6947] ERROR -- default-centos-7: ----End Backtrace-----
+E, [2017-07-27T19:19:27.581356 #6947] ERROR -- default-centos-7: ---Nested Exception---
+E, [2017-07-27T19:19:27.581364 #6947] ERROR -- default-centos-7: Class: Kitchen::Transport::SshFailed
+E, [2017-07-27T19:19:27.581372 #6947] ERROR -- default-centos-7: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2017-07-27T19:19:27.581380 #6947] ERROR -- default-centos-7: ----------------------
+E, [2017-07-27T19:19:27.581388 #6947] ERROR -- default-centos-7: ------Backtrace-------
+E, [2017-07-27T19:19:27.581396 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+E, [2017-07-27T19:19:27.581404 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/provisioner/base.rb:86:in `call'
+E, [2017-07-27T19:19:27.581413 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:384:in `block in converge_action'
+E, [2017-07-27T19:19:27.581422 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-07-27T19:19:27.581431 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-07-27T19:19:27.581439 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-07-27T19:19:27.581448 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-07-27T19:19:27.581456 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:380:in `converge_action'
+E, [2017-07-27T19:19:27.581464 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-07-27T19:19:27.581473 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-07-27T19:19:27.581481 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-07-27T19:19:27.581489 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-07-27T19:19:27.581497 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-07-27T19:19:27.581509 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-07-27T19:19:27.581518 #6947] ERROR -- default-centos-7: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-07-27T19:19:27.581526 #6947] ERROR -- default-centos-7: ----End Backtrace-----

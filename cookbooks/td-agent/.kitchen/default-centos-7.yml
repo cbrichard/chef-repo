@@ -1,0 +1,9 @@
+---
+username: kitchen
+ssh_key: "/Users/kiri/repos/chef-repo/cookbooks/td-agent/.kitchen/docker_id_rsa"
+image_id: 1b30800c7651
+container_id: 612e29d528effa7cb6a6752077a4a702e89326c32b01bf2a8a6705c5de605c0e
+hostname: localhost
+port: 32768
+last_action: create
+last_error: Kitchen::ActionFailed
