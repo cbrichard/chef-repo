@@ -1,10 +1,10 @@
 #
-# Cookbook Name:: chef-client
+# Cookbook::  chef-client
 # Recipe:: windows_service
 #
-# Author:: Julian Dunn (<jdunn@opscode.com>)
+# Author:: Julian Dunn (<jdunn@chef.io>)
 #
-# Copyright 2013, Opscode, Inc.
+# Copyright:: 2013-2017, Chef Software, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,6 +19,8 @@
 # limitations under the License.
 #
 
+Chef::Log.warn 'Running chef-client as a service on Windows is deprecated and not recommended. This recipe will be removed in a future version of this cookbook. We recommend running Chef client as a scheduled task instead.'
+
 class ::Chef::Recipe
   include ::Opscode::ChefClient::Helpers
 end
@@ -27,10 +29,23 @@ class ::Chef::Resource
 end
 
 # libraries/helpers.rb method to DRY directory creation resources
-create_directories
+create_chef_directories
+
+d_owner = root_owner
+install_command = "chef-service-manager -a install -c #{File.join(node['chef_client']['conf_dir'], 'client.service.rb')}"
+if Chef::VERSION <= '12.5.1'
+  install_command << " -L #{File.join(node['chef_client']['log_dir'], node['chef_client']['log_file'])}"
+end
+
+template "#{node['chef_client']['conf_dir']}/client.service.rb" do
+  source 'client.service.rb.erb'
+  owner d_owner
+  group node['root_group']
+  mode '644'
+end
 
 execute 'register-chef-service' do
-  command 'chef-service-manager -a install'
+  command install_command
   not_if { chef_client_service_running }
 end
 

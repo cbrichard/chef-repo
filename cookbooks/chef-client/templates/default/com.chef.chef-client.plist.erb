@@ -4,7 +4,7 @@
 
 <dict>
   <key>Label</key>
-  <string>com.opscode.chef-client</string>
+  <string>com.chef.chef-client</string>
 <%- if @launchd_mode == "interval" %>
   <key>Program</key>
   <string><%= @client_bin %></string>
@@ -26,7 +26,7 @@
   <true/>
 <%- end %>
   <key>StandardOutPath</key>
-  <string><%= node["chef_client"]["log_dir"] %>/client.log</string>
+  <string><%= node["chef_client"]["log_dir"] %>/<%= node['chef_client']['log_file'] %></string>
 </dict>
 
 </plist>
