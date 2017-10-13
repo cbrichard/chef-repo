@@ -2,6 +2,10 @@
   "name": "base",
   "description": "Base Role for All Servers",
   "run_list": [
-    "recipe[chef-client]"
+      "recipe[logrotate]",
+      "recipe[localusers]",
+      "recipe[localusers::groups]",
+      "recipe[motd]",
+      "recipe[cron]"
   ]
 }
