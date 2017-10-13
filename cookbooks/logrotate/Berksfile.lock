@@ -1,5 +1,4 @@
 DEPENDENCIES
-  apt (~> 2.0)
   fake
     path: test/fixtures/cookbooks/fake
   logrotate
@@ -7,7 +6,6 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  apt (2.5.3)
   fake (1.0.0)
     logrotate (>= 0.0.0)
-  logrotate (1.6.0)
+  logrotate (2.2.0)

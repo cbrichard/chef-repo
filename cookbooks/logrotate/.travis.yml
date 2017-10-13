@@ -1,9 +1,20 @@
-rvm:
-  - 1.9.3
-  - 2.0.0
+# Use Travis's cointainer based infrastructure
+sudo: false
+addons:
+  apt:
+    sources:
+      - chef-stable-precise
+    packages:
+      - chefdk
+
+branches:
+  only:
+    - master
+
+# Ensure we make ChefDK's Ruby the default
+install: echo "Using ChefDK for all dependencies"
 before_script:
-  - bundle exec berks install
+  - eval "$(/opt/chefdk/bin/chef shell-init bash)"
+
 script:
-  - bundle exec foodcritic -f any . --tags ~FC015
-  - bundle exec rspec --color --format progress
-  - bundle exec rubocop
+  - make travis
