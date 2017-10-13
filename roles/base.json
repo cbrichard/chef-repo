@@ -6,6 +6,7 @@
       "recipe[localusers]",
       "recipe[localusers::groups]",
       "recipe[motd]",
-      "recipe[cron]"
+      "recipe[os-hardening]",
+      "recipe[packer]"
   ]
 }
