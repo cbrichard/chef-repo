@@ -2,6 +2,7 @@
   "name": "rhel-base",
   "description": "Base Role for All Servers",
   "run_list": [
+      "recipe[yum]",
       "recipe[logrotate]",
       "recipe[localusers]",
       "recipe[localusers::groups]",
