@@ -6,8 +6,6 @@
       "recipe[logrotate]",
       "recipe[localusers]",
       "recipe[localusers::groups]",
-      "recipe[motd]",
-      "recipe[os-hardening]",
-      "recipe[packer]"
+      "recipe[motd]"
   ]
 }
